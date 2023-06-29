@@ -2,8 +2,8 @@ import os
 from datetime import datetime
 from tempfile import gettempdir
 
-from src.base import ReportFormatter
-from src.csv_reports import CSVReportFormatter, CSVAttentionPliesFormatter, CSVUnprocessedPliesFormatter, \
+from base import ReportFormatter
+from csv_reports import CSVReportFormatter, CSVAttentionPliesFormatter, CSVUnprocessedPliesFormatter, \
     CSVBoundingBoxFormatter, CSVSinglePhiFormatter, CSVTimeEstFormatter
 from data.loader import get_example_file_paths, get_report
 

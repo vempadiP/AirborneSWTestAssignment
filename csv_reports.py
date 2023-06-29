@@ -3,7 +3,7 @@ from hashlib import md5
 
 from shapely.geometry import Polygon
 
-from src.base import Report, ReportFormatter, PickResult, picks_first_valid, picks_primary_failure_reason, compactness
+from base import Report, ReportFormatter, PickResult, picks_first_valid, picks_primary_failure_reason, compactness
 
 
 class CSVReportFormatter(ReportFormatter):

@@ -6,7 +6,7 @@ import importlib_resources
 from shapely import wkt
 from shapely.geometry import Polygon
 
-from src.base import Report, PlyShape, PlyResult, PickResult, shallow_as_dict
+from base import Report, PlyShape, PlyResult, PickResult, shallow_as_dict
 from data import DATA_MODULE_NAME
 
 
