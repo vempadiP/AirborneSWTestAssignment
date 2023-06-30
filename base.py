@@ -47,8 +47,6 @@ class Report:
     failed_filenames: List[str] = field(default_factory=list)
 
 
-
-
 def shallow_as_dict(obj):
     return dict((f.name, getattr(obj, f.name)) for f in fields(obj))
 
@@ -66,7 +64,7 @@ class ReportFormatter(ABC):
 
 def compactness(geom: Polygon) -> float:
     """Polsby-Popper measure of compactness: in range 0-100%"""
-    return ((4 * pi * geom.area) / (geom.length**2)) * 100 if geom.length != 0 else 0
+    return ((4 * pi * geom.area) / (geom.length ** 2)) * 100 if geom.length != 0 else 0
 
 
 def picks_failures(picks: List[PickResult]) -> List[PickResult]:
@@ -96,5 +94,3 @@ def picks_first_valid(picks: List[PickResult]) -> PickResult:
         if pick.valid:
             return pick
     return picks[-1]
-
-
